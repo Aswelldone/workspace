@@ -1,0 +1,39 @@
+
+heart.o:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <main>:
+   0:	ba 2b 00 00 00       	mov    $0x2b,%edx
+   5:	b9 00 00 00 00       	mov    $0x0,%ecx
+   a:	bb 01 00 00 00       	mov    $0x1,%ebx
+   f:	b8 04 00 00 00       	mov    $0x4,%eax
+  14:	cd 80                	int    $0x80
+  16:	bb 00 00 00 00       	mov    $0x0,%ebx
+  1b:	b8 01 00 00 00       	mov    $0x1,%eax
+  20:	cd 80                	int    $0x80
+
+Disassembly of section .data:
+
+0000000000000000 <msg>:
+   0:	20 2a                	and    %ch,(%rdx)
+   2:	20 20                	and    %ah,(%rax)
+   4:	20 2a                	and    %ch,(%rdx)
+   6:	20 0a                	and    %cl,(%rdx)
+   8:	2a 2a                	sub    (%rdx),%ch
+   a:	2a 2a                	sub    (%rdx),%ch
+   c:	2a 2a                	sub    (%rdx),%ch
+   e:	2a 0a                	sub    (%rdx),%cl
+  10:	20 2a                	and    %ch,(%rdx)
+  12:	2a 2a                	sub    (%rdx),%ch
+  14:	2a 2a                	sub    (%rdx),%ch
+  16:	20 0a                	and    %cl,(%rdx)
+  18:	20 20                	and    %ah,(%rax)
+  1a:	20 2a                	and    %ch,(%rdx)
+  1c:	20 20                	and    %ah,(%rax)
+  1e:	20 0a                	and    %cl,(%rdx)
+  20:	31 39                	xor    %edi,(%rcx)
+  22:	31 32                	xor    %esi,(%rdx)
+  24:	35 30 30 33 34       	xor    $0x34333030,%eax
+  29:	0a 00                	or     (%rax),%al
