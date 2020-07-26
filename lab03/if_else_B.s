@@ -11,16 +11,16 @@ if_else:
 	movl	%esp, %ebp
 	.cfi_def_cfa_register 5
 	subl	$16, %esp
-	cmpl	$0, 8(%ebp)
+	cmpl	$100, 8(%ebp)
 	jle	.L2
-	cmpl	$14, 12(%ebp)
+	cmpl	$29, 12(%ebp)
 	jg	.L2
 	movl	$0, -4(%ebp)
 	jmp	.L3
 .L2:
-	cmpl	$0, 8(%ebp)
+	cmpl	$100, 8(%ebp)
 	jle	.L4
-	cmpl	$14, 12(%ebp)
+	cmpl	$30, 12(%ebp)
 	jle	.L4
 	movl	$1, -4(%ebp)
 	jmp	.L3
